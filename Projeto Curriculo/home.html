@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/Imagens/head_icon.png">
+        <title>Site para Portfólio</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="Criador" content="Marcos Marton Magalhães">
+        <meta name="Estrutura" content="HTML5, CSS e JavaScript">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body class="bodypag">
+        
+        <!-- Banner e Menus -->
+        <div id="inicio" class="banner">  
+
+            <!-- Menu Laptop-G -->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white screenbig">
+                <div id="menubig" class="col-8">
+                    <button type="button" href="#inicio" class="btn btn-primary hov"><strong>Página inicial</strong></button>
+                    <button type="button" href="#sobre-mim" class="btn btn-primary hov"><strong>Sobre mim</strong></button>
+                    <button type="button" href="#experiencia-profissional" class="btn btn-primary hov"><strong>Experiência profissional</strong></button>  
+                    <button type="button" href="#cursos" class="btn btn-primary hov"><strong>Cursos</strong></button>  
+                    <button type="button" href="#conhecimentos" class="btn btn-primary hov"><strong>Conhecimentos</strong></button> 
+                    <button type="button" href="#portfolio" class="btn btn-primary hov"><strong>Portfólio</strong></button> 
+                </div> 
+                <div class="button-contact col-4">
+                    <div class="btn-group float-end" >
+                        <a type="button" href="https://wa.me/5567992213197" target="_blank" class="btn btn-primary contact">
+                            Entre em contato
+                        </a>
+                    </div>
+                </div>                
+            </nav>
+            
+            <!-- Menu Laptop -->
+            <nav class="navbar bg-light fixed-top screensmall">
+                <div class="container-fluid">
+                    <img src="Imagens/head_icon.png" class="navbar-brand-img" alt="Icone menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div id="menusmall" class="offcanvas-body">
+                            <img src="Imagens/icon_menu.png" class="navbar-brand-img menu" alt="Icone Menu">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#inicio"><strong>Página inicial</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sobre-mim"><strong>Sobre mim</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experiencia-profissional"><strong>Experiência Profissional</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#cursos"><strong>Cursos</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#conhecimentos"><strong>Conhecimentos</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio"><strong>Portfólio</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a type="button" href="https://wa.me/5567992213197" target="_blank" class="screensmall-contact">
+                                        <strong>Entre em contato</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </nav> 
+        </div>
+
+        <!--Sobre mim-->
+        <div id="sobre-mim" class="about-me">
+            <h2 class="title-about"><Strong>Sobre mim</Strong></h2>
+            <p class="p1-about">Me chamo Marcos Marton Magalhães, tenho 22 anos, 
+                                moro atualmente em Campo Grande - MS e minha nacionalidade é brasileira.
+                                <br> 
+                                Atualmente estou na reta final da minha faculdade, 10° Semestre de Engenharia da Computação.
+            </p>
+            <p class="p2-about">Minha inspiração nessa área de atuação, vem da curiosidade sobre computadores e sua tecnologia,
+                                <br>
+                                devido a isso, tenho um sonho de me tornar um programador Front-end.
+            </p>
+            <p class="title-about"><Strong>Meus passatempos são</Strong></p>
+            <div class="hstack gap-3 myhobby">
+                <div class="p-2">
+                    <a><img class="hobbyfamily" src="Imagens/family.png" alt="Família" >
+                        <p class="hobbytext">Família</p>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a><img class="hobbyprograming" src="Imagens/programing.png" alt="Programação">
+                        <p class="hobbytext">Programação</p>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a><img class="hobbygame" src="Imagens/game.png" alt="Games">
+                        <p class="hobbytext">Jogos</p>
+                    </a>  
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiência Profissional -->
+        <h2 class="prof-exp">Experiência Profissional</h2>
+        <div id="experiencia-profissional" class="professional-experience">
+            <div class="row g-0">
+                <div class="col-md-6 company1">
+                    <a href="https://rdorval.com" target="_blank">
+                        <img class="logordorval" src="Imagens/RDorval.png" alt="RDorval">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body about-company1">
+                        <h3 class="card-title about-comp1">Estágiario Desenvolvedor</h3>
+                        <h6 class="name-company1">RDorval Soluções em Tecnologia | out 2022 - jun 2023</h6>
+                        <p class="card-text about-comp1">1. Desenvolvimento em sites/e-commerce de Wordpress.<br>
+                                                         2. Manutenção de rotina dos sites Wordpress. <br>                             
+                                                         3. Atribuição de conteúdo aos sites com WordPress. <br>
+                                                         4. Configuração de Plug-in de Wordpress. <br>
+                                                         5. Páginas de projetos em HTML5 e CSS.<br>
+                                                         6. Execução de testes exploratórios em projetos. <br>
+                        </p>
+                        <div class="comp1-ref">
+                            <h3 class="title-ref">Referência</h3>
+                            <p class="text-ref"><Strong>Rodrigo Dias Dorval</Strong><br>
+                                                Analista de Sistemas e Consultor <br>
+                                                <Strong>Email:</Strong> contato@rdorval.com <br>
+                                                <Strong>Telefone:</Strong> (67) 3211-6006
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cursos -->
+        <h2 class="title-courses">Cursos</h2>
+        <div id="cursos" class="row">
+            <div class="col-md-8"> 
+                <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Cursos/Curso Web Design (HTML, CSS e JS).jpg" class="d-block w-100" alt="Curso web designer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Cursos/Curso Desenvolvedor Web.jpg" class="d-block w-100" alt="Curso Desenvolvedor web">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Cursos/Curso Site profissional Wordpress.jpg" class="d-block w-100" alt="Curso site wordpress">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Cursos/Curso Loja virtual Wordpress.jpg" class="d-block w-100" alt="Curso Loja virtual Wordpress">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Cursos/Excel Básico ao avançado.jpg" class="d-block w-100" alt="Curso Excel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Cursos/Manutenção de Comp. e Equip. de informática.jpg" class="d-block w-100" alt="Curso Manutenção">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-btn col-md-4">
+                <button type="button" class="btn btn-outline-light" onclick="goToSlide(0)">Curso Web Designer</button>
+                <button type="button" class="btn btn-outline-light" onclick="goToSlide(1)">Curso Desenvolvedor Web</button>
+                <button type="button" class="btn btn-outline-light" onclick="goToSlide(2)">Curso Site Wordpress</button>
+                <button type="button" class="btn btn-outline-light" onclick="goToSlide(3)">Curso Loja Wordpress</button>
+                <button type="button" class="btn btn-outline-light" onclick="goToSlide(4)">Curso Excel</button>
+                <button type="button" class="btn btn-outline-light" onclick="goToSlide(5)">Curso Manutenção de Computadores</button>
+            </div>
+        </div>
+
+        <!-- Conhecimento -->
+        <h2 class="acquirements">Conhecimentos</h2>
+        <div id="conhecimentos" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h3>Habilidade</h3>
+                        <p>Wordpress</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"><Strong>Avançado</Strong></div>
+                        </div>
+                        <p>HTML5/CSS</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"><Strong>Avançado</Strong></div>
+                        </div>
+                        <p>FrameWork Bootstrap</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"><Strong>Avançado</Strong></div>
+                        </div>
+                        <p>WooCommerce</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"><Strong>Avançado</Strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h3>Idiomas</h3>
+                        <p>Português</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%;"><Strong>Nativo</Strong></div>
+                        </div>
+                        <p>Inglês</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%;"><Strong>Iniciante</Strong></div>
+                        </div>
+                        <p>Espanhol</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%;"><Strong>Iniciante</Strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h3>Linguagem de programação</h3>
+                        <p>Banco de Dados MySQL</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 15%"><Strong>Iniciante</Strong></div>
+                        </div>
+                        <p>JavaScript</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%"><Strong>Iniciante</Strong></div>
+                        </div>
+                        <p>Java</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%"><Strong>Iniciante</Strong></div>
+                        </div>
+                        <p>PHP 7</p>
+                        <div class="progress" role="progressbar" aria-label="Animated striped" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%"><Strong>Iniciante</Strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portifólio -->
+        <div id="portfolio" class="container">
+            <h2 class="portf">Portifólio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="title-port">E-Commerce's Wordpress</p>
+                    <div class="custom-box-portf">
+                        <a href="https://lojadoalunoea.org.br/" target="_blank">Loja do aluno</a>
+                        <a href="https://lojasels.com.br/" target="_blank">Loja Sels</a>
+                        <a href="https://ntstorems.com.br" target="_blank">NT Store MS</a>
+                        <a href="https://ntstorenatal.com.br" target="_blank">NT Store Natal</a>
+                        <a href="https://mulhermaisforte.org" target="_blank">Mulher mais forte</a>
+                    </div>
+                </div>                
+                <div class="col-md-4">
+                    <p class="title-port">Sites Wordpress</p>
+                    <div class="custom-box-portf">
+                        <a href="https://danielludtke.com.br/" target="_blank">Daniel Ludtke</a>
+                        <a href="http://rubengodoy.com.br/" target="_blank">Ruben Godoy</a>
+                        <a href="http://garantiadesaude.com.br/" target="_blank">Garantia de saúde</a>
+                        <a href="https://www.hab.org.br" target="_blank">HAB</a>
+                        <a href="https://penfigo.org.br/" target="_blank">Hospital Penfigo</a>
+                        <a href="https://familiasemmissao.com/" target="_blank">Familias em missão</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="title-port">Projeto OP</p>
+                    <div class="custom-box-portf">
+                        <p> • Páginas em HTML5 e CSS com FrameWork Bootstrap<br>
+                            • Planejamento de testes<br>
+                            • Execução de testes exploratórios<br>
+                            • Testes funcionais<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informações -->
+        <div id="inf" class="inf-copy">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <h1 class="title-name"> Marcos Marton Magalhães </h1>
+                    <p class="subtitle-name"> engenheiro da computação </p>
+                </div>
+                <div class="col-md-6 copy-inf">
+                    <div class="card-body copy">
+                        <a class="d-flex align-items-center mb-3">
+                            <img class="icon-git me-3" src="Imagens/github.png" alt="GitHub" >
+                            <p class="text-git mb-0">github.com/Martongit</p>
+                        </a>
+                        <a class="d-flex align-items-center mb-3">
+                            <img class="icon-email me-3" src="Imagens/email.png" alt="Gmail" >
+                            <p class="text-email mb-0">martonmarcos9@gmail.com</p>
+                        </a>
+                        <a class="d-flex align-items-center mb-3">
+                            <img class="icon-tel me-3" src="Imagens/tel.png" alt="Telefone" >
+                            <p class="text-tel mb-0">+55 (67) 9 9221-3197</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RodaPé -->
+        <footer class="footer-container">
+            <div class="footer-div" id="footer">
+                <h3 class="title-footer">Linguagens utilizadas</h3>
+                <a><img class="logohtml" src="Imagens/html.png" alt="HTML"></a>
+                <a><img class="logocss" src="Imagens/css.png" alt="CSS"></a>
+                <a><img class="logojs" src="Imagens/js.png" alt="JavaScript"></a>  
+            </div>
+            <h6 class="text-footer">©2024 Portfólio pessoal</h6>
+            <h6 class="text-footer2">Todos os direitos reservados ao individuo do qual esse portfólio pertence</h6>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

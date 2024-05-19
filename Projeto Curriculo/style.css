@@ -1,0 +1,417 @@
+.bodypag {
+    font-family: Arial, sans-serif;
+    background-color: #021222;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height:60vh; 
+    overflow: hidden; 
+    background-image: url('Imagens/banner.png'); 
+    background-size: cover;
+
+    @media screen and (max-width: 1384px) {
+        .screenbig {
+        display: none;
+        }
+    }
+    @media screen and (min-width: 1385px) {
+        .screensmall {
+        display: none;
+        }
+    }
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-white.screenbig {
+    margin: 20px; 
+    border-radius:5px; 
+    background-color: #ffffffbd!important; 
+    padding: 0px;
+}
+
+.col-8 {
+    display: flex;
+    padding-left: 5%;
+}
+
+.button-contact {
+    padding-right: 35px;
+}
+
+.btn.btn-primary.contact {
+    background-color: #23bf5e!important; 
+    border-color: transparent; 
+    font-size: 18px;
+    color:#FFF9D5;
+}
+
+.btn.btn-primary.hov {
+    background-color: transparent; 
+    text-align: center; 
+    border-color: transparent; 
+    color: #021222; 
+    font-size: 18px;
+}
+
+.btn.btn-danger.dropdown-toggle.hov {
+    background-color: transparent; 
+    text-align: center; 
+    border-color: transparent; 
+    color: #021222; 
+    font-size: 18px;
+}
+
+.hov:hover,
+.dropdown-item:hover {
+background-color: rgba(0,0,0,0.05)!important;
+}
+
+.col-4 {
+    padding-right: 35px;
+}
+
+.btn.btn-primary.exc {
+    background-color: rgb(20, 134, 240)!important; 
+    text-align: center; 
+    border-color: transparent; 
+    font-size: 18px;
+}
+
+.navbar-brand-img {
+    width: 5%; 
+    margin-left: 1.4rem;
+}
+
+.navbar-brand-img.menu {
+    width: 35%; 
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+
+.navbar-nav.justify-content-end.flex-grow-1.pe-3 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.nav-item {
+    font-size: 22px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+background-color: rgba(0,0,0,0.05);
+}
+
+.screensmall-contact {
+    background-color: #23bf5e;
+    color:#FFF9D5;
+    text-decoration: none;
+    padding: 10px 25% 10px 25%;
+    border-radius: 25px;
+}
+
+.screensmall-contact:hover {
+    background-color: #23bf5e;
+    color: #FFF9D5;
+}
+
+.about-me {
+    max-width: 75%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.title-about { 
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FF5E2B;
+}
+
+.p1-about {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #FFF9D5;
+}
+
+.p2-about {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #FFF9D5;
+}
+
+.myhobby {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hobbyfamily, .hobbyprograming, .hobbygame {
+    width: 100px;
+    height: 100px;
+    margin: 0 40px 0 40px;
+    transition: transform 0.3s ease;
+}
+
+.hobbytext {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hobbyfamily:hover, .hobbyprograming:hover, .hobbygame:hover {
+    transform: scale(1.1);
+}
+
+.prof-exp {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: #FF5E2B;
+}
+
+.professional-experience {
+    background-color: #FFF9D5;
+    border-radius: 0 35px 35px 0;
+    padding: 20px 30px 0 0;
+    margin-top: -10px auto 50px 0;
+    max-width: 99%;
+    font-family: 'Kanit', sans-serif;
+}
+
+.col-md-6.company1 {
+    text-align: center;
+    color: #021222;
+}
+
+.card-title.about-comp1 {
+    color: #021222;
+    padding-top: 30px;
+}
+
+.card-text.about-comp1 {
+    color: #021222;
+    padding: 10px 0 0 0;
+}
+
+.title-ref {
+    color: #021222;
+}
+
+.text-ref {
+    color: #021222;
+    padding-bottom: 30px;
+}
+
+.name-company1 {
+    color: #021222;
+    margin-bottom: 20px;
+}
+
+.title-courses, .acquirements {
+    font-size: 32px;
+    text-align: center;
+    margin: 70px 0 40px 0;
+    position: relative;
+    color: #FF5E2B;
+}
+
+.title-courses::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 70px;
+    height: 2px;
+    background-color: #FF5E2B;;
+    transform: translateX(-50%);
+}
+
+#cursos {
+    background-image: url('Imagens/row.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding: 20px;
+}
+
+.carousel.carousel-dark.slide {
+    width: 60%;
+    margin: 50px 100px auto;
+}
+
+.course-btn.col-md-4 {
+    margin: 120px auto;
+
+}
+
+.course-btn button {
+    margin-bottom: 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    width: 60%;
+}
+
+.course-btn button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transform: scale(1.05);
+}
+
+.acquirements::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 70px;
+    height: 2px;
+    background-color: #FF5E2B;
+    transform: translateX(-50%);
+}
+
+.container {
+    padding: 70px 0;
+}
+
+.custom-box {
+    position: relative;
+    padding: 20px;
+    margin: 0 0 -25px 20px;
+    color: #FFF9D5;
+    overflow: hidden;
+}
+
+.custom-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.custom-box p {
+    font-size: 18px;
+    margin: 25px 0 -0 0;
+}
+
+.progress-bar.progress-bar-striped.progress-bar-animated {
+    color: #021222;
+    font-family: 'Kanit', sans-serif;
+}
+
+#portfolio {
+    background-color: #021222;
+    padding: 30px 35px 100px 0;
+    max-width: 100%;
+}
+
+.portf {
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    color: #FF5E2B;
+}
+
+.title-port {
+    font-size: 24px;
+    margin: 50px 0 15px 25px;
+    color: #FFF9D5;
+}
+
+.custom-box-portf {
+    position: relative;
+    padding: 20px;
+    margin: 0 0 -25px 20px;
+    background-color: #021222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-box-portf a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.custom-box-portf a:hover {
+    color: #1a73e8;
+}
+
+.inf-copy {
+    background-color: #FFF9D5;
+    padding: 40px 0 30px 0;
+}
+
+.title-name {
+    text-align: center;
+    padding-top: 6%;
+    color:#FF5E2B;
+}
+
+.subtitle-name {
+    text-align: center;
+    margin: -13px 0 0 35%;
+    font-style: italic;
+    color:#021222;
+}
+
+.copy a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-git, .text-email, .text-tel {
+    font-size: 20px;
+    color:#021222;
+    margin: 0 0 0 -15px;
+}
+
+.icon-git, .icon-email, .icon-tel {
+    width: 6%;
+    height: 6%;
+}
+
+.footer-container {
+    text-align: center; 
+    background-color: #021222;
+    bottom: 0;
+}
+
+.footer-div {
+    padding: 40px 0 40px 0;
+}
+
+.title-footer {
+    color: #FFF9D5;
+    margin-bottom: 45px;
+}
+
+.logohtml, .logocss, .logojs {
+    width: 4%;
+    height: 3%;
+    transition: transform 0.3s ease;
+}
+
+.logohtml:hover, .logocss:hover, .logojs:hover {
+    transform: scale(1.1);
+}
+
+.text-footer, .text-footer2 {
+    color: #FFF9D5;
+}
+
+.text-footer2 {
+    padding-bottom: 40px;
+}
